@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.example.sort.*;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MainTest {
 

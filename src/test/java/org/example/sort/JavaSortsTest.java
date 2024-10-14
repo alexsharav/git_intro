@@ -3,7 +3,7 @@ package org.example.sort;
 import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.List;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class JavaSortsTest {
 
@@ -34,5 +34,11 @@ public class JavaSortsTest {
     currentSort.change_sort(new BubbleSort());
     List<Integer> bubbleSortedList = currentSort.sort(unsortedList);
     assertEquals(Arrays.asList(-5213, 0, 27, 52, 205, 731), bubbleSortedList);
+  }
+  @Test
+  public void testSorterWithLargeList() {
+    List<Integer> largeList = Arrays.asList(new Integer[101]);
+    JavaSorts sorter = new JavaSorts(new MergeSort());
+    assertThrows(IllegalArgumentException.class, () -> sorter.sort(largeList));
   }
 }
