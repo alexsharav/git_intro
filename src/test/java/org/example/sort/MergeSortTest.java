@@ -9,9 +9,9 @@ public class MergeSortTest {
 
   @Test
   void testMergeSort() {
-    MergeSort mergeSortStrategy = new MergeSort();
+    MergeSort mergeSort = new MergeSort();
     List<Integer> unsortedList = Arrays.asList(52, 27, 731, 205, -5213, 0);
-    List<Integer> sortedList = mergeSortStrategy.sort(unsortedList);
+    List<Integer> sortedList = mergeSort.sort(unsortedList);
     assertEquals(Arrays.asList(-5213, 0, 27, 52, 205, 731), sortedList);
   }
 
