@@ -20,4 +20,7 @@ public class JavaSorts implements Sort {
     System.out.println("Switched sort class to: " + sortType);
     this.sortType = sortType;
   }
+  public Sort get_sort() {
+    return sortType;
+  }
 }
