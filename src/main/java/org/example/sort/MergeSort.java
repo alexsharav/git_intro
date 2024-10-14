@@ -32,7 +32,7 @@ public class MergeSort implements Sort {
   @Override
   public List<Integer> sort(List<Integer> list) {
     if (list.size() > MAXIMUM) {
-      throw new IllegalArgumentException("Список слишком велик для сортировки");
+      throw new IllegalArgumentException("Over maxsize");
     }
     List<Integer> listMerge = new ArrayList<>(list);
     if (listMerge.size() < 2) {

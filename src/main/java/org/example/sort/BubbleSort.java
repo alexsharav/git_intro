@@ -10,7 +10,7 @@ public class BubbleSort implements Sort {
   @Override
   public List<Integer> sort(List<Integer> list) {
     if (list.size() > MAXIMUM) {
-      throw new IllegalArgumentException("Список слишком велик для сортировки");
+      throw new IllegalArgumentException("Over maxsize");
     }
     List<Integer> listBubble = new ArrayList<>(list);
     int n = listBubble.size();
