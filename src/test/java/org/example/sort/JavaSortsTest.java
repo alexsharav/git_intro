@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class JavaSortsTest {
 
   @Test
-  public void testJavaMergeSort() {
+  void testJavaMergeSort() {
     List<Integer> list = Arrays.asList(52, 27, 731, 205, -5213, 0);
     JavaSorts SortingTypes = new JavaSorts(new MergeSort());
     List<Integer> sortedList = SortingTypes.sort(list);
@@ -16,7 +16,7 @@ public class JavaSortsTest {
   }
 
   @Test
-  public void testJavaBubbleSort() {
+  void testJavaBubbleSort() {
     List<Integer> list = Arrays.asList(52, 27, 731, 205, -5213, 0);
     JavaSorts SortingTypes = new JavaSorts(new BubbleSort());
     List<Integer> sortedList = SortingTypes.sort(list);
@@ -24,7 +24,7 @@ public class JavaSortsTest {
   }
 
   @Test
-  public void testStrategySwitching() {
+  void testStrategySwitching() {
     List<Integer> unsortedList = Arrays.asList(52, 27, 731, 205, -5213, 0);
     JavaSorts currentSort = new JavaSorts(new MergeSort());
     List<Integer> mergeSortedList = currentSort.sort(unsortedList);
